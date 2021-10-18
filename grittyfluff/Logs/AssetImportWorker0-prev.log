@@ -15,11 +15,11 @@ C:/Users/Jku/Desktop/portfolio/gritty-fluff/grittyfluff
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60679
+61461
 Successfully changed project path to: C:/Users/Jku/Desktop/portfolio/gritty-fluff/grittyfluff
 C:/Users/Jku/Desktop/portfolio/gritty-fluff/grittyfluff
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 82.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 84.02 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.21f1 (f2d5d3c59f8c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/Resources/UnitySubsystems
@@ -35,97 +35,97 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56240
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56176
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.21f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.003091 seconds.
+Registered in 0.003285 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 85.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 83.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.118 seconds
+- Completed reload, in  2.142 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2118ms)
-		BeginReloadAssembly (82ms)
+	ReloadAssembly (2142ms)
+		BeginReloadAssembly (70ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (504ms)
-			LoadAssemblies (80ms)
+		EndReloadAssembly (497ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (180ms)
+			SetupTypeCache (179ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (241ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (238ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (85ms)
+				RefreshPlugins (84ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (111ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
+				ProcessInitializeOnLoadAttributes (110ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005808 seconds.
+Registered in 0.005539 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Jku\Desktop\portfolio\gritty-fluff\grittyfluff\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Jku\Desktop\portfolio\gritty-fluff\grittyfluff\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.206 seconds
+- Completed reload, in  1.212 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1207ms)
+	ReloadAssembly (1212ms)
 		BeginReloadAssembly (174ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (963ms)
-			LoadAssemblies (105ms)
+		EndReloadAssembly (965ms)
+			LoadAssemblies (109ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (365ms)
+			SetupTypeCache (376ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (348ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (333ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (247ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (239ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2949 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.7 MB.
-System memory in use after: 105.9 MB.
+System memory in use before: 117.6 MB.
+System memory in use after: 117.8 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3395.
-Total: 3.592600 ms (FindLiveObjects: 0.296400 ms CreateObjectMapping: 0.072700 ms MarkObjects: 3.150900 ms  DeleteObjects: 0.071000 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3409.
+Total: 3.441300 ms (FindLiveObjects: 0.273200 ms CreateObjectMapping: 0.076100 ms MarkObjects: 3.008800 ms  DeleteObjects: 0.081700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -139,37 +139,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/memezlol
-  artifactKey: Guid(2808470cc7a81b94fbc4d36483650621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/memezlol using Guid(2808470cc7a81b94fbc4d36483650621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2430e64967e2238fbd108b382c6069') in 0.011722 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 39.042505 seconds.
-  path: Assets/inspiration
-  artifactKey: Guid(a90c2b21a92d1a243a0715971a2320c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/inspiration using Guid(a90c2b21a92d1a243a0715971a2320c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca8cc2e83ef6a0450c08e46bad77ac89') in 0.008193 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.656945 seconds.
-  path: Assets/inspiration/IMG_20190620_231235.jpg
-  artifactKey: Guid(88492b2624abce448b800122948985a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/inspiration/IMG_20190620_231235.jpg using Guid(88492b2624abce448b800122948985a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0499653961327f8061eaa017d4a3ddb0') in 0.067576 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 123.912459 seconds.
-  path: Assets/inspiration/GettyImages-476735640-2048x1536.jpg
-  artifactKey: Guid(0a4db0c4cf8c47e4f90ee22d0e6862a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/inspiration/GettyImages-476735640-2048x1536.jpg using Guid(0a4db0c4cf8c47e4f90ee22d0e6862a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd116dca6ee4736811fa0eb5f34ff5ad2') in 0.026305 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 32.142555 seconds.
-  path: Assets/inspiration/evening-sunset-mountains-firewatch-drawing-wallpaper-preview.jpg
-  artifactKey: Guid(8d3814d2dc59506408823583821538c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/inspiration/evening-sunset-mountains-firewatch-drawing-wallpaper-preview.jpg using Guid(8d3814d2dc59506408823583821538c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5780236a81e4cf502f707bc7d43c2f61') in 0.012900 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 193.021016 seconds.
-  path: Assets/memezlol/0a357ipg.bmp
-  artifactKey: Guid(6f34099a5fceaff448b54706eda6d2fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/memezlol/0a357ipg.bmp using Guid(6f34099a5fceaff448b54706eda6d2fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43edba35c5de07dcdbaa8796dee10918') in 0.019472 seconds 
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(75930bb8d3325404688c2f6b3cdee759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(75930bb8d3325404688c2f6b3cdee759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9851876bdca6522d2f3c162972ff0c37') in 0.034333 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

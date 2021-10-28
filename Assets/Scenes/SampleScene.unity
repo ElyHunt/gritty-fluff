@@ -955,10 +955,10 @@ RectTransform:
   m_Father: {fileID: 1427510865}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: -200, y: -600}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1113}
+  m_SizeDelta: {x: 3620, y: 2026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2090730004
 MonoBehaviour:
@@ -974,8 +974,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1503803781}
   lines:
-  - Hey. You wanna buy weed?
-  - Eh? Suit yourself.
+  - "Hey hot stuff!~ \U0001F616\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6\U0001F4A6(^///////^)"
+  - "Wanna buy some WEED?! (\xAC\u203F\xAC)"
+  - "No? Suit yourself! ~(\u2741\xB4\u25E1`\u2741)~"
+  - ...
+  - "Wanna fuck instead? (\xAC\u203F\xAC)"
   textSpeed: 0.02
 --- !u!114 &2090730005
 MonoBehaviour:

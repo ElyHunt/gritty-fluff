@@ -14,7 +14,7 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textComponent.text = string.Empty;
+        textComponent.text = string.Empty;//Start the dialogue box out empty.
         StartDialogue();
     }
 
@@ -22,7 +22,7 @@ public class Dialogue : MonoBehaviour
     void Update()
     {
         if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
-            if(textComponent.text == lines[index])
+            if(textComponent.text == lines[index])//If the text is finished loading
             { 
                 NextLine();
             }
@@ -41,13 +41,13 @@ public class Dialogue : MonoBehaviour
         foreach(char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
+            yield return new WaitForSeconds(textSpeed);//speed characters display
         }
 
     }
 
-    void NextLine()//gets next line and starts a coroutine to load it
-        //if at end of list, sets textbox to inactive!
+    void NextLine()//gets next line and starts a coroutine to type it out
+        //if at end of list, closes text box.
     {
         if(index < lines.Length-1)
         {

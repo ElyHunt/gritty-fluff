@@ -22,8 +22,10 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+        if (horizontalInput == 0 && verticalInput == 0) return;
         //Horizontal and Vertical Axes represent WASD. This can be changed in Unity preferences?
         //Might have to edit the line in FixedUpdate to reflect other input types, however
+
 
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);

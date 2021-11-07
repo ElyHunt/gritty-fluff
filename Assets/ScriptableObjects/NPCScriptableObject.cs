@@ -4,23 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/NPCScriptableObject", order = 1)]
+[CreateAssetMenu(fileName = "New NPC", menuName = "ScriptableObjects/NPCScriptableObject", order = 1)]
 public class NPCScriptableObject : ScriptableObject
 {
-    public string name;
+    public new string name;//new lets you use variable name "name".
 
     public string[] lines;//These are will be replaced by a randomly generated system or dialogue tree or something?
-    public Image dialogueBox;
+    //For now, just make it a single "conversation".
     public Color dialogueBoxColor;
     public Color textColor;
-
-
-    public void speak()
-    {
-        dialogueBox.GetComponent<Dialogue>().SpeakLines(lines, dialogueBoxColor, textColor);//Load lines and make NPC Speak.
-    }
-    
-
-
 
 }

@@ -36,6 +36,9 @@ public class DisplayNPC : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log(npcData.name + " is NOW SPEAKING!");
+            gameObject.transform.LookAt(collision.gameObject.transform.parent);
+            //Remember! Collision is reported on the capsule--but this script is on the
+            //parent "holder" of the NPC capsule, etc.
             speak();
         }
     }

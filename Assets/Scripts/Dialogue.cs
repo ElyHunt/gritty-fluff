@@ -32,7 +32,6 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
             }
             else 
             {
-                ToggleDisplayText();
                 StopAllCoroutines(); 
             }
     }
@@ -41,6 +40,7 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
     {
         index = 0;
         ToggleDisplayText();
+        textComponent.text = string.Empty;
         StartCoroutine(TypeLine());
     }
 
@@ -65,7 +65,8 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
         }
         else
         {
-            gameObject.SetActive(false);
+            ToggleDisplayText();
+            //gameObject.SetActive(false);
         }    
     }
 
@@ -84,6 +85,7 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
     {
         displayingText = !displayingText;
         gameObject.GetComponent<Image>().enabled = displayingText;//hides the black box
+        textComponent.enabled = displayingText;
         //flip displayingText gate, also enable/disables black box.
     }
 

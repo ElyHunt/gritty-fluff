@@ -29,4 +29,19 @@ public class DisplayNPC : MonoBehaviour
         dialogueBox.GetComponent<Dialogue>().SpeakLines(npcData.lines, npcData.dialogueBoxColor, npcData.textColor);//Load lines and make NPC Speak.
     }
 
+
+    public void checkCollision(Collision collision)
+    { 
+        Debug.Log(collision.gameObject.transform.parent.name + " has been bumped. ");
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log(npcData.name + " is NOW SPEAKING!");
+            speak();
+        }
+    }
+
+
+
+
+
 }

@@ -142,6 +142,14 @@ PrefabInstance:
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 2090730002}
+    - target: {fileID: 5442447825056427471, guid: 37d8f737be7aa4f21939a3d41f9aa309, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894184583371726048, guid: 37d8f737be7aa4f21939a3d41f9aa309, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8328318721291152424, guid: 37d8f737be7aa4f21939a3d41f9aa309, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -401,7 +409,7 @@ GameObject:
   - component: {fileID: 784293251}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -599,7 +607,7 @@ GameObject:
   - component: {fileID: 1176313884}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -631,7 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a230614952db448abaef1e302d6e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0.25
+  movementSpeed: 0.1
   rotateSpeed: 25
 --- !u!1 &1427510861
 GameObject:
@@ -777,7 +785,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503803779}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -1139,7 +1147,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090730002}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1182,9 +1190,10 @@ GameObject:
   - component: {fileID: 2107006135}
   - component: {fileID: 2107006134}
   - component: {fileID: 2107006138}
+  - component: {fileID: 2107006137}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1254,6 +1263,20 @@ Transform:
   m_Father: {fileID: 1176313883}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2107006137
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107006133}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2107006138
 Rigidbody:
   m_ObjectHideFlags: 0

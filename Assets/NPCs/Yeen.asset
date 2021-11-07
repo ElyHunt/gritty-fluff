@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f21b9ceac39260488671d89efad8cba, type: 3}
   m_Name: Yeen
   m_EditorClassIdentifier: 
-  name: Yeena
+  name: YeenaYeena
   lines:
   - Have
   - you

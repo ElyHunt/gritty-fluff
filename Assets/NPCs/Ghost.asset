@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f21b9ceac39260488671d89efad8cba, type: 3}
   m_Name: Ghost
   m_EditorClassIdentifier: 
-  name: 
-  lines: []
+  name: Ghostey!~
+  lines:
+  - Hmmph.
+  - Look, I'm glad you think I'm cool but...
+  - you staring at me?
+  - Awkie.
   dialogueBoxColor: {r: 0, g: 0, b: 0, a: 0.8}
-  textColor: {r: 1, g: 1, b: 1, a: 0}
+  textColor: {r: 1, g: 1, b: 1, a: 1}

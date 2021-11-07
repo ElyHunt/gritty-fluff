@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f21b9ceac39260488671d89efad8cba, type: 3}
   m_Name: Gremlin
   m_EditorClassIdentifier: 
-  name: 
-  lines: []
-  dialogueBoxColor: {r: 1, g: 0, b: 0.7538042, a: 0}
-  textColor: {r: 1, g: 1, b: 1, a: 0.8}
+  name: GremlinDog
+  lines:
+  - ...
+  - ...
+  - '*stabs u*'
+  dialogueBoxColor: {r: 1, g: 0, b: 0.7538042, a: 0.8}
+  textColor: {r: 1, g: 1, b: 1, a: 1}

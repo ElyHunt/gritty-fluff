@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class NPCCapsuleReporter : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         this.GetComponentInParent<DisplayNPC>().checkCollision(collision);
+        
     }
 }

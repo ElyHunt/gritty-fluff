@@ -30,7 +30,7 @@ public class DisplayNPC : MonoBehaviour
     }
 
 
-    public void checkCollision(Collision collision)
+    public void checkCollision(Collider collision)
     { 
         Debug.Log(collision.gameObject.transform.parent.name + " has been bumped. ");
         if (collision.gameObject.tag == "Player")

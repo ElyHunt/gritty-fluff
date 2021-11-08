@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ghostey!~
   lines:
-  - Hmmph.
-  - Look, I'm glad you think I'm cool but...
-  - you staring at me?
-  - Awkie.
+  - HAVE YOU SEEN MY BOYFRIEND?!
+  - HE'S MINE.
+  - ...For a while...  <3~
   dialogueBoxColor: {r: 0, g: 0, b: 0, a: 0.8}
   textColor: {r: 1, g: 1, b: 1, a: 1}

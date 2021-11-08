@@ -32,7 +32,7 @@ public class DisplayNPC : MonoBehaviour
 
     public void checkCollision(Collider collision)
     { 
-        Debug.Log(collision.gameObject.transform.parent.name + " has been bumped. ");
+        //Debug.Log(collision.gameObject.transform.parent.name + " has been bumped. ");
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log(npcData.name + " is NOW SPEAKING!");

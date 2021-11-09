@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f21b9ceac39260488671d89efad8cba, type: 3}
-  m_Name: Ghost
+  m_Name: Leopardy
   m_EditorClassIdentifier: 
-  name: Ghostey!~
+  name: Leopardy
   lines:
-  - HAVE YOU SEEN MY BOYFRIEND?!
-  - HE'S MINE.
-  - :)
-  dialogueBoxColor: {r: 0, g: 0, b: 0, a: 0.8}
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  - Imagine walking up to an NPC and he asks "am I too analytical sometimes?"
+  - And then there's responses for you to choose from and all of them are awkward.
+  - ...
+  - You look like you were expecting something.
+  dialogueBoxColor: {r: 0, g: 0.647032, b: 1, a: 1}
+  textColor: {r: 1, g: 0.6064555, b: 0.15566039, a: 1}

@@ -9,9 +9,10 @@ public class NPCScriptableObject : ScriptableObject
 {
     public new string name;//new lets you use variable name "name".
 
-    public string[] lines;//These are will be replaced by a randomly generated system or dialogue tree or something?
-    //For now, just make it a single "conversation".
-    public Color dialogueBoxColor;
-    public Color textColor;
+    public string[] lines;//Dialogue is stored in an array.
+    
+    public Color dialogueBoxColor = Color.white;
+    public Color textColor = Color.black;
+
 
 }

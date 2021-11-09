@@ -32,7 +32,8 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
             }
             else 
             {
-                StopAllCoroutines(); 
+                StopAllCoroutines();
+                textComponent.text = lines[index];//Instantly loads the text if the user preses space.
             }
     }
 
@@ -46,17 +47,6 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
         StartCoroutine(TypeLine());
 
     }
-
-    IEnumerator TypeLine()//Prints text one character at a time.
-    {
-        foreach(char c in lines[index].ToCharArray())
-        {
-            textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);//speed characters display
-        }
-
-    }
-
     void NextLine()//gets next line and starts a coroutine to type it out
         //if at end of list, closes text box.
     {
@@ -69,19 +59,25 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
         else
         {
             ToggleDisplayText();
-            //gameObject.SetActive(false);
         }    
     }
 
+    IEnumerator TypeLine()//Prints text one character at a time.
+    {
+        foreach(char c in lines[index].ToCharArray())
+        {
+            textComponent.text += c;
+            yield return new WaitForSeconds(textSpeed);//speed characters display
+        }
+    }
 
     public void SpeakLines(string[] characterLines, Color backgroundColor, Color textColor)
     {
-        if (displayingText)
+        if (displayingText)//If you talk to another NPC, they "interrupt" the other. :)
         {
             StopAllCoroutines();
             ToggleDisplayText();
         }
-            //textComponent.color = color; change the text to another color?
             lines = characterLines;
             Image chatBackground = gameObject.GetComponent<Image>();
             chatBackground.color = backgroundColor;
@@ -90,12 +86,11 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
         
     }
 
-    void ToggleDisplayText()
+    void ToggleDisplayText()//This is to turn on and off the dialogue box at the bottom of the screen HUD. (In canvas. :) )
     {
         displayingText = !displayingText;
         gameObject.GetComponent<Image>().enabled = displayingText;//hides the black box
         textComponent.enabled = displayingText;
-        //flip displayingText gate, also enable/disables black box.
     }
 
 }

@@ -23,9 +23,11 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
     // Update is called once per frame
     void Update()
     {
-        if (!displayingText) return;//returns if we aren't displaying Text right now.
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
 
-        if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
+        
+
+        if(displayingText && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)))
             if(textComponent.text == lines[index])//If the text is finished loading
             { 
                 NextLine();

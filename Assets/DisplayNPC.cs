@@ -18,12 +18,6 @@ public class DisplayNPC : MonoBehaviour
          
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void speak()
     {
         dialogueBox.GetComponent<Dialogue>().SpeakLines(npcData.lines, npcData.dialogueBoxColor, npcData.textColor);//Load lines and make NPC Speak.

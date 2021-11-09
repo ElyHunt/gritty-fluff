@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed;
     public float rotateSpeed;
 
-    void FixedUpdate() //FixedUpdate is for Physics, right?
+    void FixedUpdate() 
     {
         if (Input.anyKey) MovePlayer(); //If a key is pressed, move the player. :)
     }

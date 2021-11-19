@@ -14,13 +14,17 @@ public class DisplayNPC : MonoBehaviour
     void Start() { 
         capsule.GetComponent<MeshRenderer>().material.color = npcData.textColor;
         visor.GetComponent<MeshRenderer>().material.color = npcData.dialogueBoxColor;
+        //Colors selected in npcData translate to the color of the character as well!
+        //Potentially this will be replaced by a display Model to render.
 
-         
+
     }
 
     public void speak()
     {
-        dialogueBox.GetComponent<Dialogue>().SpeakLines(npcData.lines, npcData.dialogueBoxColor, npcData.textColor);//Load lines and make NPC Speak.
+        dialogueBox.GetComponent<Dialogue>().SpeakLines(npcData.lines, npcData.dialogueBoxColor, npcData.textColor);
+        //Load lines into dialogue box and display them.
+        
     }
 
 

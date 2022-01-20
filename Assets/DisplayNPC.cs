@@ -33,7 +33,7 @@ public class DisplayNPC : MonoBehaviour
         //Debug.Log(collision.gameObject.transform.parent.name + " has been bumped. ");
         if (collision.gameObject.tag == "Player")
         {
-            gameObject.transform.LookAt(collision.gameObject.transform.parent);
+            gameObject.transform.LookAt(collision.gameObject.transform);
             //Remember! Collision is reported on the capsule's collider--but this script is on the
             //parent of the NPC capsule. The capsule forwards the collision here.
             speak();

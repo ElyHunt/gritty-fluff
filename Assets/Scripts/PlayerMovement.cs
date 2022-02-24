@@ -12,9 +12,11 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed;
     public float rotateSpeed;
 
+
     void FixedUpdate() 
     {
         if (Input.anyKey) MovePlayer(); //If a key is pressed, move the player. :)
+
     }
 
 
@@ -44,3 +46,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
 }
+
+/*
+ Notes about Player:
+Freeze rotation enabled so that Capsule won't fall over when it hits objects.
+ */

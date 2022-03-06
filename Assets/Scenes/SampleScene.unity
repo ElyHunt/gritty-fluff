@@ -398,7 +398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 33.8, y: 51.2, z: 85.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -525,7 +525,7 @@ Transform:
   - {fileID: 1751507032}
   - {fileID: 243900607}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -605,9 +605,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.06810364, y: 0.08370508, z: -0.0057341475, w: 0.9941441}
-  m_LocalPosition: {x: -1.931993, y: 4.6018977, z: -18.070415}
+  m_LocalPosition: {x: -1.931993, y: 4.6018977, z: -18.070414}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2107006136}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 1.78, y: 9.626, z: 0}
@@ -718,7 +719,7 @@ Transform:
   m_LocalScale: {x: 50, y: 1, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1272872213
 PrefabInstance:
@@ -1774,13 +1775,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107006133}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.33, y: 1.5, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalRotation: {x: -0.06810364, y: -0.08370508, z: 0.0057341475, w: 0.9941441}
+  m_LocalPosition: {x: -6.3717356, y: -0.7208402, z: 17.509695}
+  m_LocalScale: {x: 1.5000005, y: 1.5, z: 1.5000004}
   m_Children:
   - {fileID: 784293250}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &2107006137
 CapsuleCollider:
@@ -1826,6 +1827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 0.15
   rotateSpeed: 25
+  mainCamera: {fileID: 0}
 --- !u!1001 &5442447826365760807
 PrefabInstance:
   m_ObjectHideFlags: 0

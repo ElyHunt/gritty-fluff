@@ -11,7 +11,12 @@ public class PlayerMovement : MonoBehaviour
     [Header("Player Movement Settings")]
     public float movementSpeed;
     public float rotateSpeed;
+    public Camera mainCamera;
 
+    private void Start()
+    {
+        mainCamera = Camera.main;
+    }
 
     void FixedUpdate() 
     {
@@ -29,9 +34,15 @@ public class PlayerMovement : MonoBehaviour
         //Might have to edit the line in FixedUpdate to reflect other input types, however
 
 
+        Vector3 cameraForward = mainCamera.transform.forward;
+        Vector3 cameraRight = mainCamera.transform.right;
 
-        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        Vector3 movementDirection = cameraForward * verticalInput + cameraRight * horizontalInput;
+        //Calculates the movement direction based on the camera's rotation.
+        //In the camera's script, it is set to look at the player at all times.
+
         movementDirection.Normalize();
+        movementDirection.y = 0;
 
         transform.Translate(movementDirection * movementSpeed, Space.World);
         //Actual Movement of player. Speed can be set in editor.
@@ -42,7 +53,9 @@ public class PlayerMovement : MonoBehaviour
         //AKA Controls which direction the player is facing
 
 
-        //EOH: Adapted from: https://www.youtube.com/watch?v=BJzYGsMcy8Q&t=256s
+        //EOH: Adapted from: https://www.youtube.com/watch?v=BJzYGsMcy8Q&t=256s & https://forum.unity.com/threads/moving-character-relative-to-camera.383086/
+
+
     }
 
 }

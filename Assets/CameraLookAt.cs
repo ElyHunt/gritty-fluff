@@ -19,7 +19,7 @@ public class CameraLookAt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.LookAt(currentFocus.transform);
+        this.transform.LookAt(currentFocus.transform.localPosition);
     } //look at currentFocus continually
 
     //Looks at the default gameObject.

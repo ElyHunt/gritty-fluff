@@ -18,5 +18,5 @@ MonoBehaviour:
   - And then there's responses for you to choose from and all of them are awkward.
   - ...
   - You look like you were expecting something.
-  dialogueBoxColor: {r: 0, g: 0.647032, b: 1, a: 1}
+  dialogueBoxColor: {r: 0, g: 0.647032, b: 1, a: 0.48235294}
   textColor: {r: 1, g: 0.6064555, b: 0.15566039, a: 1}

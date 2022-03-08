@@ -16,5 +16,5 @@ MonoBehaviour:
   lines:
   - Uhmm...
   - Badoobah???!!!
-  dialogueBoxColor: {r: 0, g: 0.6943345, b: 1, a: 0.8}
+  dialogueBoxColor: {r: 0, g: 0.6943345, b: 1, a: 0.48235294}
   textColor: {r: 0.30650616, g: 1, b: 0, a: 1}

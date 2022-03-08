@@ -19,5 +19,5 @@ MonoBehaviour:
   - All you have to do is stare into a campfire... And all your problems will feel
     a million miles out! <3
   - Of course having a cute friend with you helps. (^///^)
-  dialogueBoxColor: {r: 1, g: 0.5397955, b: 0.16509432, a: 0.8}
+  dialogueBoxColor: {r: 1, g: 0.5397955, b: 0.16509432, a: 0.48235294}
   textColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 1}

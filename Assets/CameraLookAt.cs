@@ -25,25 +25,36 @@ public class CameraLookAt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // this.transform.LookAt(new Vector3(currentFocus.transform.position.x, this.transform.forward.y, currentFocus.transform.position.z));
+        
+        calculateCameraRotation();
+    }
+
+
+    //Performs the calculations to look at the player and to allow the mouse to pan around the scene.
+    private void calculateCameraRotation()
+    { 
 
         this.transform.Rotate(new Vector3(0, 1, 0), lastRotateX);
         lastRotateX = (Input.GetAxis("Mouse X") * rotationSensitivity) + lastRotateX;
         if (lastRotateX >= 45) lastRotateX = 45;
-        else if (lastRotateX <= -45) lastRotateX = -45;
+        else if (lastRotateX <= -45) lastRotateX = -45;//Calculates the left and right panning of camera
 
         this.transform.Rotate(new Vector3(1, 0, 0), lastRotateY);
         lastRotateY = (-Input.GetAxis("Mouse Y") * rotationSensitivity) + lastRotateY;
         if (lastRotateY >= 90) lastRotateY = 90;
-        else if (lastRotateY <= -90) lastRotateY = -90;
+        else if (lastRotateY <= -90) lastRotateY = -90;//Calculates the up and down panning of camera
 
 
 
-        this.transform.LookAt(new Vector3(currentFocus.transform.position.x, currentFocus.transform.position.y, currentFocus.transform.position.z));
+        this.transform.LookAt(new Vector3(currentFocus.transform.position.x, currentFocus.transform.position.y, currentFocus.transform.position.z));//Looks at the player as it moves
 
-        this.transform.Rotate(new Vector3(0,1,0), lastRotateX);
-        this.transform.Rotate(new Vector3(1,0,0), lastRotateY);
-    } //look at currentFocus continually
+        this.transform.Rotate(new Vector3(0, 1, 0), lastRotateX);
+        this.transform.Rotate(new Vector3(1, 0, 0), lastRotateY);//Re-rotates after the player moves to preserve panning.
+
+    }//There may be a better way to do this--Refactor needed? -EOH
+
+
+
 
     //Looks at the default gameObject.
     public void lookAtDefault()

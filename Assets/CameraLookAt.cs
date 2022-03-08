@@ -27,22 +27,22 @@ public class CameraLookAt : MonoBehaviour
     {
        // this.transform.LookAt(new Vector3(currentFocus.transform.position.x, this.transform.forward.y, currentFocus.transform.position.z));
 
+        this.transform.Rotate(new Vector3(0, 1, 0), lastRotateX);
+        lastRotateX = (Input.GetAxis("Mouse X") * rotationSensitivity) + lastRotateX;
+        if (lastRotateX >= 45) lastRotateX = 45;
+        else if (lastRotateX <= -45) lastRotateX = -45;
 
         this.transform.Rotate(new Vector3(1, 0, 0), lastRotateY);
         lastRotateY = (-Input.GetAxis("Mouse Y") * rotationSensitivity) + lastRotateY;
         if (lastRotateY >= 90) lastRotateY = 90;
         else if (lastRotateY <= -90) lastRotateY = -90;
 
-        this.transform.Rotate(new Vector3(0, 1, 0), lastRotateX);
-        lastRotateX = (Input.GetAxis("Mouse X") * rotationSensitivity) + lastRotateX;
-        if (lastRotateX >= 45) lastRotateX = 45;
-        else if (lastRotateX <= -45) lastRotateX = -45;
 
 
         this.transform.LookAt(new Vector3(currentFocus.transform.position.x, currentFocus.transform.position.y, currentFocus.transform.position.z));
 
-        this.transform.Rotate(new Vector3(1,0,0), lastRotateY);
         this.transform.Rotate(new Vector3(0,1,0), lastRotateX);
+        this.transform.Rotate(new Vector3(1,0,0), lastRotateY);
     } //look at currentFocus continually
 
     //Looks at the default gameObject.

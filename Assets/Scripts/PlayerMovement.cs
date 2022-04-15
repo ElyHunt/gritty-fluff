@@ -12,16 +12,30 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed;
     public float rotateSpeed;
     public Camera mainCamera;
+    private Animator werewolfAnimator;//animation controller!
+    private bool moving = false;
 
     private void Start()
     {
         mainCamera = Camera.main;
+        werewolfAnimator = this.GetComponentInChildren<Animator>();
+
     }
 
     void FixedUpdate() 
     {
-        if (Input.anyKey) MovePlayer(); //If a key is pressed, move the player. :)
+        if (Input.anyKey)
+        {
+            MovePlayer(); //If a key is pressed, move the player. :)
+            //NOTE: Animation triggered in MovePlayer. Refactor code for clarity!
 
+        }
+        else if(moving)//if no input and moving, turn walk animation off.
+        {
+            werewolfAnimator.SetBool("KeyPressed", false);
+            moving = false;
+        }
+        //optimized with a bool gate, "moving"
     }
 
 
@@ -32,6 +46,8 @@ public class PlayerMovement : MonoBehaviour
         if (horizontalInput == 0 && verticalInput == 0) return;
         //Horizontal and Vertical Axes represent WASD. This can be changed in Unity preferences?
         //Might have to edit the line in FixedUpdate to reflect other input types, however
+        werewolfAnimator.SetBool("KeyPressed", true);
+        moving = true;//Start walk animation
 
 
         Vector3 cameraForward = mainCamera.transform.forward;

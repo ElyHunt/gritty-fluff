@@ -19,5 +19,5 @@ MonoBehaviour:
   - YOU KNOW THOSE DISHWASHER PODS????
   - Those are actually BAD for your dishes!!!!!!!
   - MY ENTIRE LIFE. LIES!!!!!!!!!!!!!!
-  dialogueBoxColor: {r: 1, g: 0.7137255, b: 0.827451, a: 0.48235294}
-  textColor: {r: 0.587, g: 0.4782963, b: 0.3188642, a: 1}
+  dialogueBoxColor: {r: 1, g: 0, b: 0.3972602, a: 1}
+  textColor: {r: 0.6698113, g: 0.39800376, b: 0, a: 1}

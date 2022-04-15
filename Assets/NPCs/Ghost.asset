@@ -17,5 +17,5 @@ MonoBehaviour:
   - HAVE YOU SEEN MY BOYFRIEND?!
   - HE'S MINE.
   - :)
-  dialogueBoxColor: {r: 0, g: 0, b: 0, a: 0.48235294}
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  dialogueBoxColor: {r: 1, g: 1, b: 1, a: 1}
+  textColor: {r: 0.91540956, g: 0, b: 1, a: 1}

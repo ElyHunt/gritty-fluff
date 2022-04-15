@@ -7,13 +7,33 @@ public class DisplayNPC : MonoBehaviour
     public NPCScriptableObject npcData;
     public GameObject dialogueBox;
     public GameObject capsule;
-    public GameObject visor;
+    public GameObject[] visor;
+
+    private Material displayMaterial;
 
 
     // Start is called before the first frame update
     void Start() { 
-        capsule.GetComponent<MeshRenderer>().material.color = npcData.textColor;
-        visor.GetComponent<MeshRenderer>().material.color = npcData.dialogueBoxColor;
+        //capsule.GetComponent<Renderer>().material.color = npcData.textColor;
+
+        displayMaterial = new Material(capsule.GetComponent<Renderer>().material);
+        displayMaterial.shader = Shader.Find("Standard (Specular setup)");
+        displayMaterial.SetColor("_EmissionColor", npcData.textColor);
+        displayMaterial.color = npcData.textColor;
+        capsule.GetComponent<Renderer>().material = displayMaterial;
+        //displayMaterial.CopyPropertiesFromMaterial(capsule.GetComponent<Renderer>().material);
+
+        //To anyone else! The Unity editor automatically takes care of enabling this if you use the editor to look at the shader settings.
+        //However, the Emission color will not apply unless you enable it using the following line of code. :) Took me a few hours to find!
+        displayMaterial.EnableKeyword("_EMISSION");
+
+
+
+
+        visor[0].GetComponent<Light>().color = npcData.dialogueBoxColor;
+        visor[1].GetComponent<Light>().color = npcData.dialogueBoxColor;
+        visor[2].GetComponent<Light>().color = npcData.dialogueBoxColor;
+        visor[3].GetComponent<Light>().color = npcData.dialogueBoxColor;
         //Colors selected in npcData translate to the color of the character as well!
         //Potentially this will be replaced by a display Model to render.
 

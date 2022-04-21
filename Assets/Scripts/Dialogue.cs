@@ -12,6 +12,8 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
 
     private int index;
     private bool displayingText;
+    private float chatBackgroundTransparency = .123f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -80,6 +82,9 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
             StopAllCoroutines();
             ToggleDisplayText();
         }
+
+            backgroundColor.a = chatBackgroundTransparency;//lowers the alpha so chatbox is transparent.
+
             lines = characterLines;
             Image chatBackground = gameObject.GetComponent<Image>();
             chatBackground.color = backgroundColor;

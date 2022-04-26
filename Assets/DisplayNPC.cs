@@ -11,6 +11,7 @@ public class DisplayNPC : MonoBehaviour
 
     private Material displayMaterial;
 
+    private Animator werewolfAnimator;
 
     // Start is called before the first frame update
     void Start() { 
@@ -37,7 +38,12 @@ public class DisplayNPC : MonoBehaviour
         //Colors selected in npcData translate to the color of the character as well!
         //Potentially this will be replaced by a display Model to render.
 
+        werewolfAnimator = gameObject.GetComponentInChildren<Animator>();
+    }
 
+    public void Update()
+    {
+        if (Random.Range(1, 1000)==1) werewolfAnimator.SetTrigger("IdleBEngaged");
     }
 
     public void speak()
@@ -56,7 +62,13 @@ public class DisplayNPC : MonoBehaviour
             gameObject.transform.LookAt(collision.gameObject.transform);
             //Remember! Collision is reported on the capsule's collider--but this script is on the
             //parent of the NPC capsule. The capsule forwards the collision here.
+
+            werewolfAnimator.SetTrigger("IdleBEngaged");
+            //Play Idle B when player talks to.
+
             speak();
+
+
         }
     }
 

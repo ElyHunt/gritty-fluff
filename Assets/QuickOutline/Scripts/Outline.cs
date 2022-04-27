@@ -58,7 +58,6 @@ public class Outline : MonoBehaviour {
   private Mode outlineMode;
 
   [SerializeField]
-  public NPCScriptableObject npcColors;//EOH
   private Color outlineColor = Color.white;
 
   [SerializeField, Range(0f, 10f)]
@@ -84,7 +83,9 @@ public class Outline : MonoBehaviour {
 
   void Awake() {
 
-    outlineColor = npcColors.dialogueBoxColor;//EOH
+        DisplayNPC NPC = this.GetComponentInParent<DisplayNPC>();
+        if (NPC != null) outlineColor = this.GetComponentInParent<DisplayNPC>().npcData.dialogueBoxColor;//EOH
+        else outlineColor = OutlineColor;
 
     // Cache renderers
     renderers = GetComponentsInChildren<Renderer>();

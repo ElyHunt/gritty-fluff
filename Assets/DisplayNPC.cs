@@ -44,6 +44,7 @@ public class DisplayNPC : MonoBehaviour
     public void Update()
     {
         if (Random.Range(1, 1000)==1) werewolfAnimator.SetTrigger("IdleBEngaged");
+        //Randomly engage IDLE B animation
     }
 
     public void speak()

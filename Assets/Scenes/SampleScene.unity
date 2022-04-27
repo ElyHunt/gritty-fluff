@@ -2412,7 +2412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  npcColors: {fileID: 11400000, guid: c1070074879b9e84f8d29cb6e7702842, type: 2}
+  outlineColor: {r: 0.013226509, g: 0, b: 1, a: 1}
   outlineWidth: 10
   precomputeOutline: 0
   bakeKeys: []

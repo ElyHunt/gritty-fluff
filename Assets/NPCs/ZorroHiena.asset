@@ -21,3 +21,4 @@ MonoBehaviour:
   - Of course having a cute friend with you helps. (^///^)
   dialogueBoxColor: {r: 1, g: 0.45070422, b: 0, a: 1}
   textColor: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+  talkedTo: 0

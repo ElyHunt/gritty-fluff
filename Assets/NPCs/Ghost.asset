@@ -19,3 +19,4 @@ MonoBehaviour:
   - :)
   dialogueBoxColor: {r: 1, g: 1, b: 1, a: 1}
   textColor: {r: 0.91540956, g: 0, b: 1, a: 1}
+  talkedTo: 0

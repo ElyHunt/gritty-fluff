@@ -14,7 +14,13 @@ public class NPCScriptableObject : ScriptableObject
     public Color dialogueBoxColor = Color.white;//Controls the color of the dialogue box as well as the "visor" of the capsule.
     public Color textColor = Color.black;//Controls the text color and the capsule color.
 
+    public bool talkedTo = false;
+    //In DisplayNPC.cs, this flag is changed once an NPC has been talked to.
+    //This allows the checkbox to be checked in the UI. :)
+
+
     //Note: Scriptable Objects are like containers for data.
     //They help a lot with scalability and modularity and 
     //reduce the number of prefabs you have to have in a project. -EOH
 }
+

@@ -84,7 +84,7 @@ public class Outline : MonoBehaviour {
   void Awake() {
 
         DisplayNPC NPC = this.GetComponentInParent<DisplayNPC>();
-        if (NPC != null) outlineColor = this.GetComponentInParent<DisplayNPC>().npcData.dialogueBoxColor;//EOH
+        if (NPC != null) outlineColor = this.GetComponentInParent<DisplayNPC>().npcData.textColor;//EOH
         else outlineColor = OutlineColor;
 
     // Cache renderers

@@ -12,13 +12,13 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
 
     private int index;
     private bool displayingText;
-    private float chatBackgroundTransparency = .123f;
+    private float chatBackgroundTransparency = .6f;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        textComponent.text = string.Empty;//Start the dialogue box out empty.
+        //textComponent.text = string.Empty;//Start the dialogue box out empty.
         displayingText = false;
     }
 
@@ -98,6 +98,12 @@ public class Dialogue : MonoBehaviour//This script is the interface for the canv
         displayingText = !displayingText;
         gameObject.GetComponent<Image>().enabled = displayingText;//hides the black box
         textComponent.enabled = displayingText;
+    }
+
+
+    public bool isDisplaying()
+    {
+        return displayingText;//accessor :)
     }
 
 }

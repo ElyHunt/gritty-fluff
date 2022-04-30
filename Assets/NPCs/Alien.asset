@@ -17,5 +17,6 @@ MonoBehaviour:
   - Just remember...
   - If the cops ask?
   - "It's a water pipe. Not a bong. \U0001F60E"
-  dialogueBoxColor: {r: 0, g: 0.6943345, b: 1, a: 1}
-  textColor: {r: 0.30650616, g: 1, b: 0, a: 1}
+  dialogueBoxColor: {r: 0.30588236, g: 1, b: 0, a: 1}
+  textColor: {r: 0, g: 0.691252, b: 1, a: 1}
+  talkedTo: 0

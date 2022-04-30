@@ -13,11 +13,7 @@ MonoBehaviour:
   m_Name: Yeen
   m_EditorClassIdentifier: 
   name: YeenaYeena
-  lines:
-  - ohmanohmanohmanohmanohmanohmanohmannandas
-  - We found out THE WORST THING
-  - YOU KNOW THOSE DISHWASHER PODS????
-  - Those are actually BAD for your dishes!!!!!!!
-  - MY ENTIRE LIFE. LIES!!!!!!!!!!!!!!
+  lines: []
   dialogueBoxColor: {r: 1, g: 0, b: 0.3972602, a: 1}
   textColor: {r: 0.6698113, g: 0.39800376, b: 0, a: 1}
+  talkedTo: 0

@@ -20,3 +20,4 @@ MonoBehaviour:
   - You look like you were expecting something.
   dialogueBoxColor: {r: 0, g: 0.647032, b: 1, a: 1}
   textColor: {r: 1, g: 0.53488374, b: 0, a: 1}
+  talkedTo: 0

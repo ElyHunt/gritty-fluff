@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Yeen
   m_EditorClassIdentifier: 
   name: YeenaYeena
-  lines: []
+  lines:
+  - Hey hey hey.
+  - Tell that guy over there to stop looking so shady.
+  - He's really skeeving me out.
   dialogueBoxColor: {r: 1, g: 0, b: 0.3972602, a: 1}
   textColor: {r: 0.6698113, g: 0.39800376, b: 0, a: 1}
   talkedTo: 0

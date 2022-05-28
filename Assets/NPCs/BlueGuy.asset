@@ -17,5 +17,5 @@ MonoBehaviour:
   - wanna do CRIMES?
   - ART CRIMES???
   dialogueBoxColor: {r: 0.14057496, g: 0.2015769, b: 0.764151, a: 1}
-  textColor: {r: 0.058339275, g: 0.071499206, b: 0.5377358, a: 1}
+  textColor: {r: 0.5613208, g: 0.5721081, b: 1, a: 1}
   talkedTo: 0

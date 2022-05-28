@@ -15,8 +15,9 @@ MonoBehaviour:
   name: Alien!~
   lines:
   - Just remember...
-  - If the cops ask?
-  - "It's a water pipe. Not a bong. \U0001F60E"
+  - If you need anything?
+  - "I'm your guy. \U0001F60E"
+  - Unless you're a cop. Then I am NOT your guy.
   dialogueBoxColor: {r: 0.30588236, g: 1, b: 0, a: 1}
   textColor: {r: 0, g: 0.691252, b: 1, a: 1}
   talkedTo: 0
